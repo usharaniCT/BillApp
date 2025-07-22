@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Bill</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body class="container mt-5">
+    <h2>Generate Bill</h2>
+    <form action="/generate-bill" method="POST">
+        <div class="form-group">
+            <label>Customer Name</label>
+            <input name="customer_name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Product</label>
+            <input name="product" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Quantity</label>
+            <input type="number" name="quantity" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Price (₹)</label>
+            <input type="number" step="0.01" name="price" class="form-control" required>
+        </div>
+        <button class="btn btn-primary">Generate Bill</button>
+    </form>
+</body>
+</html>

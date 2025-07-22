@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill Preview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body class="container mt-5">
+    <h2>Bill Preview</h2>
+    <p><strong>Customer Name:</strong> {{ name }}</p>
+    <p><strong>Product:</strong> {{ product }}</p>
+    <p><strong>Quantity:</strong> {{ quantity }}</p>
+    <p><strong>Price per unit:</strong> ₹{{ price }}</p>
+    <p><strong>Total:</strong> ₹{{ total }}</p>
+    <a href="/view-bills" class="btn btn-success">View All Bills</a>
+</body>
+</html>
